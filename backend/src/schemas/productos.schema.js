@@ -3,15 +3,15 @@ import { z } from "zod";
 export const createPerfilSchema = z.object({
   nombre: z
     .string({
-      required_error: "El nombre es requerido",
-      invalid_type_error: "El nombre debe ser un texto",
+      required_error: "El Codigo es requerido",
+      invalid_type_error: "El Codigo debe ser un texto",
     })
     .min(1)
     .max(255),
   description: z
     .string({
-      required_error: "La descripcion es requerida",
-      invalid_type_error: "La descripcion debe ser un texto",
+      required_error: "El detalle es requerido",
+      invalid_type_error: "El detalle debe ser un texto",
     })
     .min(1)
     .max(255)
